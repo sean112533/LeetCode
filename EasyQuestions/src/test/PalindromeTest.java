@@ -14,9 +14,10 @@ public class PalindromeTest {
 
   @Test
   public void testIsPalindrome() {
+    int number = 121;
     Palindrome test = new Palindrome();
     assertTrue("Integer is palindrome when it reads the same backwards as forwards",
-        test.IsPalindrome());
+        test.IsPalindrome(number) == true);
   }
 
 
