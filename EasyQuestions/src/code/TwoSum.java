@@ -21,16 +21,13 @@ public class TwoSum {
     throw new Exception("No tow sum solution");
   }
 
-
   public static void main(String[] args) throws Exception {
     TwoSum test = new TwoSum();
     int[] nums = {2, 7, 11, 15};
     int target = 9;
 
-    int[] results = test.twoSum(nums, target);
-    for (int index = 0; index < results.length; index++) {
-      System.out.println(results[index]);
-    }
-  }
+    System.out.println(test.twoSum(nums, target));
 
+  }
 }
+
