@@ -25,9 +25,11 @@ public class TwoSum {
     TwoSum test = new TwoSum();
     int[] nums = {2, 7, 11, 15};
     int target = 9;
+    int[] result = test.twoSum(nums, target);
 
-    System.out.println(test.twoSum(nums, target));
-
+    for (int element : result) {
+      System.out.println(element);
+    }
   }
 }
 

@@ -1,5 +1,6 @@
 package test;
 
+import static org.junit.Assert.assertTrue;
 import org.junit.Test;
 import code.TwoSum;
 
@@ -12,7 +13,7 @@ public class TwoSumTest {
     int[] nums = {2, 7, 11, 15};
     int target = 9;
 
-    assertTrue("ïf the value is equal each other it's true", test.twoSum(nums, target));
+    assertTrue("ïf the value is equal each other it's true", test.twoSum(nums, target) == 9);
 
   }
 }
