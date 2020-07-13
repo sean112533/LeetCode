@@ -15,8 +15,6 @@ public class RomanTest {
     Roman test = new Roman();
     assertTrue("if the correct shift happends from roman letter(String) to integer return true",
         test.romanToInt("X") == 10);
-
-
   }
 
   @Test
