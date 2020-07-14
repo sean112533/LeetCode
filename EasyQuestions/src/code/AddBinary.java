@@ -1,7 +1,20 @@
 package code;
 
+/**
+ * LeetCode easy questions 67.
+ * 
+ * @author sanghunlee
+ *
+ */
 public class AddBinary {
-
+  /**
+   * AddBinary to read the two String values input to add up into the String result in binary adding
+   * method.
+   * 
+   * @param a String of binary number.
+   * @param b String of binary number.
+   * @return added up binary number print out as String value.
+   */
   public String addBinary(String a, String b) {
     int i = a.length() - 1;
     int j = b.length() - 1;

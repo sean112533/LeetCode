@@ -6,11 +6,17 @@ import org.junit.Test;
 import code.AddBinary;
 
 public class TestAddBinary {
+  /**
+   * test the class exist before carry out the test.
+   */
   @Before
   public void testClass() {
     AddBinary test = new AddBinary();
   }
 
+  /**
+   * first test to check the addBinary works.
+   */
   @Test
   public void testAddBinary() {
     AddBinary test = new AddBinary();
@@ -21,6 +27,9 @@ public class TestAddBinary {
         test.addBinary(a, b).equals(result));
   }
 
+  /**
+   * additional test to carry out the AddBinary works.
+   */
   @Test
   public void testAgain() {
     AddBinary test = new AddBinary();
