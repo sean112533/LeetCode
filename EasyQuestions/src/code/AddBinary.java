@@ -66,6 +66,11 @@ public class AddBinary {
 
   }
 
+  /**
+   * main method to test out the method is working.
+   * 
+   * @param args
+   */
   public static void main(String[] args) {
     AddBinary test = new AddBinary();
     test.addBinary("11", "1");
