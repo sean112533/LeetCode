@@ -2,7 +2,7 @@ package code;
 
 public class ListNode {
   int val;// integer value.
-  ListNode next; // listnode of next node.
+  public ListNode next; // listnode of next node.
 
   public ListNode() {}
 
@@ -11,7 +11,7 @@ public class ListNode {
    * 
    * @param val
    */
-  ListNode(int val) {
+  public ListNode(int val) {
     this.val = val;
   }
 
@@ -21,7 +21,7 @@ public class ListNode {
    * @param val of value itself.
    * @param next of value of next node pointing.
    */
-  ListNode(int val, ListNode next) {
+  public ListNode(int val, ListNode next) {
     this.val = val;
     this.next = next;
   }
@@ -58,10 +58,16 @@ public class ListNode {
 
   }
 
-  public static void main(String []args) {
+  public static void main(String[] args) {
     ListNode test = new ListNode();
-    test.mergeTwoList(ListNode l1,ListNodel2);
+    ListNode l1 = new ListNode(1);
+    l1.next = new ListNode(2);
+    l1.next.next = new ListNode(3);
+    ListNode l2 = new ListNode(1);
+    l2.next = new ListNode(3);
+    l2.next.next = new ListNode(4);
+    test.mergeTwoList(l1, l2);
+    System.out.println(test.mergeTwoList(l1, l2));
+
   }
-
-
 }
