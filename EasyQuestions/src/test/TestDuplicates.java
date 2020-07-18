@@ -1,5 +1,6 @@
 package test;
 
+import static org.junit.Assert.assertTrue;
 import org.junit.Before;
 import org.junit.Test;
 import code.Duplicates;
@@ -14,9 +15,15 @@ public class TestDuplicates {
 
   @Test
   public void testDeleteDuplicates() {
-    ListNode head = new ListNode();
     Duplicates test = new Duplicates();
-    assertTrue("if the duplicated is delete in the linked list", test.deleteDuplicates() == result);
+    ListNode head = new ListNode(1);
+    head.next = new ListNode(1);
+    head.next.next = new ListNode(2);
+    ListNode result = new ListNode(1);
+    result.next = new ListNode(2);
+
+    assertTrue("if the duplicated is delete in the linked list",
+        test.deleteDuplicates(head).equals(result));
 
   }
 }
