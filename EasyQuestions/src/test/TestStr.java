@@ -1,3 +1,4 @@
+
 package test;
 
 import static org.junit.Assert.assertTrue;
@@ -20,3 +21,4 @@ public class TestStr {
         test.strStr(haystack, needle) == -1);
   }
 }
+
