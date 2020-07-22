@@ -9,8 +9,28 @@ package code;
 public class SameTree {
 
   public boolean isSameTree(TreeNode p, TreeNode q) {
-    // TODO Auto-generated method stub
-    return false;
+    if (p == null & q == null) {
+      return true;
+    }
+    if (p == null || q == null) {
+      return false;
+    }
+    boolean rr1 = isSameTree(p.left, q.left);
+    boolean rr2 = isSameTree(p.left, q.right);
+    if (rr1 == false || rr2 == false) {
+      return false;
+    }
+    if (p.val != q.val) {
+      return false;
+    }
+    return true;
+  }
+
+  public static void main(String[] args) {
+    SameTree test = new SameTree();
+    TreeNode p = new TreeNode();
+    TreeNode q = new TreeNode();
+    test.isSameTree(p, q);
   }
 
 }
