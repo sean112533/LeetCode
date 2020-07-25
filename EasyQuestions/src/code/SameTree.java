@@ -29,22 +29,18 @@ public class SameTree {
   public static void main(String[] args) {
     SameTree test = new SameTree();
 
-    TreeNode p = new TreeNode();
-    p.val = 1;
-    p.left = new TreeNode();
-    p.left.val = 2;
-    p.right = new TreeNode();
-    p.right.val = 3;
-
-    TreeNode q = new TreeNode();
-    q.val = 1;
-    q.left = new TreeNode();
-    q.left.val = 2;
-    q.right = new TreeNode();
-    q.right.val = 3;
+    TreeNode p = new TreeNode(1);
+    p.left = new TreeNode(2);
+    p.right = new TreeNode(3);
 
 
-    test.isSameTree(p, q);
+    TreeNode q = new TreeNode(1);
+    q.left = new TreeNode(2);
+    q.right = new TreeNode(3);
+
+
+
+    System.out.println(test.isSameTree(p, q));
   }
 
 }
