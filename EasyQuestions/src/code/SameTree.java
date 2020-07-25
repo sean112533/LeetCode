@@ -38,7 +38,13 @@ public class SameTree {
     q.left = new TreeNode(2);
     q.right = new TreeNode(3);
 
+    System.out.println(p.val);
+    System.out.println(p.left.val);
+    System.out.println(p.right.val);
 
+    System.out.println(q.val);
+    System.out.println(q.left.val);
+    System.out.println(q.right.val);
 
     System.out.println(test.isSameTree(p, q));
   }
