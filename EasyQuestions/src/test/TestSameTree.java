@@ -7,6 +7,7 @@ import code.SameTree;
 import code.TreeNode;
 
 public class TestSameTree {
+
   @Before
   public void testClass() {
     SameTree test = new SameTree();
@@ -19,6 +20,6 @@ public class TestSameTree {
     TreeNode q = null;
     SameTree test1 = new SameTree();
     assertTrue("check the binary tree is same or not", test1.isSameTree(p, q) == true);
-
   }
+
 }

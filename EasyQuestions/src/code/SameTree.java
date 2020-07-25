@@ -29,6 +29,9 @@ public class SameTree {
   public static void main(String[] args) {
     SameTree test = new SameTree();
     TreeNode p = new TreeNode();
+    p.val = 1; 
+    p1 = ;
+    
     TreeNode q = new TreeNode();
     test.isSameTree(p, q);
   }

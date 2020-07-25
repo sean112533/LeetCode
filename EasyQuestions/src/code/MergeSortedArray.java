@@ -47,7 +47,6 @@ public class MergeSortedArray {
     int[] nums2 = {2, 5, 6};
     int n = 3;
     test.merge(nums1, m, nums2, n);
-
   }
 
 }

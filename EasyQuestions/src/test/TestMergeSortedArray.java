@@ -19,6 +19,6 @@ public class TestMergeSortedArray {
     int[] output = {1, 2, 2, 3, 5, 6};
     MergeSortedArray test = new MergeSortedArray();
     assertEuqals("if two given integer array merge as one sorted array",
-        test.merge(nums1, m, nums2, n).compareTo(output));
+        test.merge(nums1, m, nums2, n));
   }
 }
