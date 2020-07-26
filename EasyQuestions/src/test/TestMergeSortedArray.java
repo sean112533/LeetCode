@@ -1,5 +1,6 @@
 package test;
 
+import static org.junit.Assert.assertTrue;
 import org.junit.Before;
 import org.junit.Test;
 import code.MergeSortedArray;
@@ -18,7 +19,7 @@ public class TestMergeSortedArray {
     int n = 3;
     int[] output = {1, 2, 2, 3, 5, 6};
     MergeSortedArray test = new MergeSortedArray();
-    assertEuqals("if two given integer array merge as one sorted array",
-        test.merge(nums1, m, nums2, n));
+    assertTrue("if two given integer array merge as one sorted array",
+        test.merge(nums1, m, nums2, n) == output);
   }
 }

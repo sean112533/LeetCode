@@ -9,7 +9,7 @@ package code;
 public class SameTree {
 
   public boolean isSameTree(TreeNode p, TreeNode q) {
-    if (p == null & q == null) {
+    if (p == null && q == null) {
       return true;
     }
     if (p == null || q == null) {
@@ -33,18 +33,9 @@ public class SameTree {
     p.left = new TreeNode(2);
     p.right = new TreeNode(3);
 
-
     TreeNode q = new TreeNode(1);
     q.left = new TreeNode(2);
     q.right = new TreeNode(3);
-
-    System.out.println(p.val);
-    System.out.println(p.left.val);
-    System.out.println(p.right.val);
-
-    System.out.println(q.val);
-    System.out.println(q.left.val);
-    System.out.println(q.right.val);
 
     System.out.println(test.isSameTree(p, q));
   }
