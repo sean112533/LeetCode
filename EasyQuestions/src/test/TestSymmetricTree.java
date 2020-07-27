@@ -16,7 +16,14 @@ public class TestSymmetricTree {
   public void testIsSymmetric() {
     SymmetricTree test = new SymmetricTree();
     boolean result = false;
-    TreeNode root = new TreeNode();
+    TreeNode root = new TreeNode(1);
+    root.left = new TreeNode(2);
+    root.right = new TreeNode(2);
+    root.left.left = new TreeNode(3);
+    root.left.right = new TreeNode(4);
+    root.right.left = new TreeNode(4);
+    root.right.right = new TreeNode(3);
+    System.out.println(test.isSymmetric(root));
     assertTrue("íf the TreeNode root is true value return true", test.isSymmetric(root) == true);
   }
 }
