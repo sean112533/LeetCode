@@ -13,4 +13,8 @@ public class SymmetricTree {
     return false;
   }
 
+  public static void main(String[] args) {
+
+  }
+
 }
