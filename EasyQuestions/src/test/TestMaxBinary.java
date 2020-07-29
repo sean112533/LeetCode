@@ -12,6 +12,9 @@ public class TestMaxBinary {
     MaxBinary test = new MaxBinary();
   }
 
+  /**
+   * test to run the maxDepth with it's correct condition.
+   */
   @Test
   public void testMaxDepth() {
     MaxBinary test = new MaxBinary();
