@@ -1,6 +1,8 @@
 package test;
 
-import java.awt.List;
+import static org.junit.Assert.assertTrue;
+import java.util.ArrayList;
+import java.util.List;
 import org.junit.Before;
 import org.junit.Test;
 import code.BinaryTreeLevel;
@@ -21,7 +23,10 @@ public class TestBinaryTreeLevel {
    */
   @Test
   public void testLevelOrderBottom() {
-    List test = new List();
+    BinaryTreeLevel test = new BinaryTreeLevel();
+    List<Integer> list = new ArrayList();
     TreeNode root = new TreeNode();
+    assertTrue("if the bottom up level order traversal o fit's node values",
+        test.levelOrderBottom(root) == null);
   }
 }
