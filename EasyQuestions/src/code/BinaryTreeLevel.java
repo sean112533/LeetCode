@@ -23,6 +23,8 @@ public class BinaryTreeLevel {
   }
 
   public static void main(String[] args) {
+    BinaryTreeLevel test = new BinaryTreeLevel();
+    List<List<Integer>> list = new LinkedList();
 
   }
 
