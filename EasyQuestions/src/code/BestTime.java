@@ -2,7 +2,7 @@ package code;
 
 public class BestTime {
   /**
-   * Algorithm to find the Maximum profit from multiple transaction.
+   * Q123. Algorithm to find the Maximum profit from multiple transaction.
    * 
    * @param prices integer of array.
    * @return the total maximum number of profit.
